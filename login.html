@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="stylii.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+
+<body>
+    <div>
+        <div class="nav-amazon">
+            <i class="fa-solid fa-location-dot" style="margin-left: 25px;"></i>
+            <h4>JEEJAL AMAN PUBLIC SCHOOL BHITTAI ABAD GHOTKI</h4>
+            <i class="fa-solid fa-phone-volume" style="margin-left: 800px;"></i>
+            <h4 style="margin-left: 10px;">03003113830</h4>
+        </div>
+        <div class="navbar">
+            <nav>
+                <ul>
+                    <li><a href="./home.html">Home</a></li>
+                    <li><a href="./service.html">service</a></li>
+                    <li><a href="./About.html">About</a></li>
+                    <li><a href="./contact.html">contact</a></li>
+                    <li><a href="./sigin.html">Signin</a></li>
+                    <li><a href="./login.html">Login</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="pic">
+            <img src="./japs-white-logo.png" width="150px" style=" margin-top: -50px; margin-left: 20px;">
+        </div>
+        <div>
+            <div class="pic">
+                <img src="./logo1.webp" width="150px"
+                    style="text-align: center ; margin-top: 30px; margin-left: 600px;">
+            </div>
+            <div>
+                <form onsubmit="login(event)">
+                    <h3 style="text-align: center;   border: double rgb(20, 13, 13);">Registration form</h3>
+                    <h1> login</h1>
+                    <input type="text" id="login_email" placeholder="email">
+                    <input type="text" id="login_password" placeholder="password">
+                    <input type="text" id="login_password" placeholder=" again password">
+                    <button>login</button>
+                    <button onclick="logout()">logout</button>
+                    </from>
+            </div>
+            <script src="index.js"></script>
+            <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-app.js"></script>
+            <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-auth.js"></script>
+            <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-firestore.js"></script>
+            <script>
+                const firebaseConfig = {
+                    apiKey: "AIzaSyD4g59jye--JhJ-cCNt7Ph1zroZVZsrzd0",
+                    authDomain: "new-project-2c868.firebaseapp.com",
+                    projectId: "new-project-2c868",
+                    storageBucket: "new-project-2c868.appspot.com",
+                    messagingSenderId: "778144438175",
+                    appId: "1:778144438175:web:2436d8ce03caf7c60dcfaa",
+                    measurementId: "G-BYNZHC8BZZ"
+                };
+                firebase.initializeApp(firebaseConfig);
+            </script>
+</body>
+
+</html>
